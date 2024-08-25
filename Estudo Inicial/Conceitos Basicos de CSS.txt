@@ -1,0 +1,316 @@
+/***********************************************************
+Conceitos básicos de CSS
+************************************************************/
+
+/* 
+Seletores: Identificam os elementos HTML que serão estilizados. 
+*/
+
+/* 
+Seletor de Elemento: Seleciona todos os elementos de um tipo específico. 
+*/
+p {
+    color: blue; /* Estiliza todos os parágrafos para ter texto azul */
+}
+
+/* 
+Seletor de Classe: Seleciona todos os elementos com uma classe específica. 
+*/
+.container {
+    margin: 0 auto; /* Centraliza elementos com a classe "container" */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+}
+
+/* 
+Seletor de ID: Seleciona o único elemento com o ID especificado. 
+*/
+#header {
+    background-color: #f4f4f4; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+}
+
+/* 
+Seletor Universal: Aplica estilos a todos os elementos. 
+*/
+* {
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+}
+
+/* 
+Seletor Descendente: Seleciona elementos que estão dentro de um elemento pai específico. 
+*/
+nav ul {
+    list-style-type: none; /* Remove as bolinhas da lista dentro do <nav> */
+}
+
+/* 
+Seletor de Atributo: Seleciona elementos com um atributo específico. 
+*/
+input[type="text"] {
+    border: 1px solid #ccc; /* Aplica uma borda aos inputs de texto */
+}
+
+/******************************************************
+Exemplos de Propriedades de Texto e Fontes
+******************************************************/
+
+/* 
+Propriedade font-family: Define a fonte usada para o texto. 
+*/
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do corpo do documento */
+}
+
+/* 
+Propriedade font-size: Define o tamanho do texto. 
+*/
+h1 {
+    font-size: 2em; /* Define o tamanho do texto dos títulos <h1> */
+}
+
+/* 
+Propriedade color: Define a cor do texto. 
+*/
+p {
+    color: #333; /* Define a cor do texto para um cinza escuro */
+}
+
+/* 
+Propriedade text-align: Define o alinhamento do texto. 
+*/
+h2 {
+    text-align: center; /* Centraliza o texto dos títulos <h2> */
+}
+
+/* 
+Propriedade text-decoration: Define decorações de texto, como sublinhado. 
+*/
+a {
+    text-decoration: none; /* Remove a linha sublinhada dos links */
+}
+
+/******************************************************
+Exemplos de Propriedades de Layout
+******************************************************/
+
+/* 
+Propriedade margin: Define o espaço externo ao redor dos elementos. 
+*/
+.container {
+    margin: 20px; /* Adiciona uma margem de 20px ao redor do container */
+}
+
+/* 
+Propriedade padding: Define o espaço interno dentro dos elementos. 
+*/
+.box {
+    padding: 15px; /* Adiciona espaçamento interno de 15px */
+}
+
+/* 
+Propriedade border: Define a borda ao redor dos elementos. 
+*/
+.card {
+    border: 1px solid #ddd; /* Adiciona uma borda fina e cinza ao redor das "cards" */
+}
+
+/* 
+Propriedade width: Define a largura de um elemento. 
+*/
+img {
+    width: 100%; /* Define a largura da imagem para ocupar todo o espaço disponível */
+}
+
+/* 
+Propriedade display: Define como um elemento é exibido na página. 
+*/
+header {
+    display: flex; /* Usa Flexbox para layout no cabeçalho */
+    justify-content: space-between; /* Distribui o conteúdo do cabeçalho */
+}
+
+/* 
+Propriedade position: Define a posição de um elemento na página. 
+*/
+.footer {
+    position: fixed; /* Fixa o rodapé na parte inferior da janela */
+    bottom: 0;
+    width: 100%;
+}
+
+/******************************************************
+Exemplos de Pseudo-classes e Pseudo-elementos
+******************************************************/
+
+/* 
+Pseudo-classe :hover: Aplica estilos quando o usuário passa o mouse sobre um elemento. 
+*/
+button:hover {
+    background-color: #555; /* Altera a cor de fundo quando o botão é sobrevoado */
+}
+
+/* 
+Pseudo-elemento ::before: Insere conteúdo antes de um elemento. 
+*/
+h2::before {
+    content: "→ "; /* Adiciona uma seta antes do texto do <h2> */
+    color: red; /* Define a cor da seta como vermelha */
+}
+
+
+
+/* 
+Seletores: Identificam os elementos HTML que serão estilizados. 
+*/
+
+/* 
+Seletor de Elemento: Seleciona todos os elementos de um tipo específico. 
+*/
+p {
+    color: blue; /* Estiliza todos os parágrafos para ter texto azul */
+}
+
+/* 
+Seletor de Classe: Seleciona todos os elementos com uma classe específica. 
+*/
+.container {
+    margin: 0 auto; /* Centraliza elementos com a classe "container" */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+}
+
+/* 
+Seletor de ID: Seleciona o único elemento com o ID especificado. 
+*/
+#header {
+    background-color: #f4f4f4; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+}
+
+/* 
+Seletor Universal: Aplica estilos a todos os elementos. 
+*/
+* {
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+}
+
+/* 
+Seletor Descendente: Seleciona elementos que estão dentro de um elemento pai específico. 
+*/
+nav ul {
+    list-style-type: none; /* Remove as bolinhas da lista dentro do <nav> */
+}
+
+/* 
+Seletor de Atributo: Seleciona elementos com um atributo específico. 
+*/
+input[type="text"] {
+    border: 1px solid #ccc; /* Aplica uma borda aos inputs de texto */
+}
+
+/******************************************************
+Exemplos de Propriedades de Texto e Fontes
+******************************************************/
+
+/* 
+Propriedade font-family: Define a fonte usada para o texto. 
+*/
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do corpo do documento */
+}
+
+/* 
+Propriedade font-size: Define o tamanho do texto. 
+*/
+h1 {
+    font-size: 2em; /* Define o tamanho do texto dos títulos <h1> */
+}
+
+/* 
+Propriedade color: Define a cor do texto. 
+*/
+p {
+    color: #333; /* Define a cor do texto para um cinza escuro */
+}
+
+/* 
+Propriedade text-align: Define o alinhamento do texto. 
+*/
+h2 {
+    text-align: center; /* Centraliza o texto dos títulos <h2> */
+}
+
+/* 
+Propriedade text-decoration: Define decorações de texto, como sublinhado. 
+*/
+a {
+    text-decoration: none; /* Remove a linha sublinhada dos links */
+}
+
+/******************************************************
+Exemplos de Propriedades de Layout
+******************************************************/
+
+/* 
+Propriedade margin: Define o espaço externo ao redor dos elementos. 
+*/
+.container {
+    margin: 20px; /* Adiciona uma margem de 20px ao redor do container */
+}
+
+/* 
+Propriedade padding: Define o espaço interno dentro dos elementos. 
+*/
+.box {
+    padding: 15px; /* Adiciona espaçamento interno de 15px */
+}
+
+/* 
+Propriedade border: Define a borda ao redor dos elementos. 
+*/
+.card {
+    border: 1px solid #ddd; /* Adiciona uma borda fina e cinza ao redor das "cards" */
+}
+
+/* 
+Propriedade width: Define a largura de um elemento. 
+*/
+img {
+    width: 100%; /* Define a largura da imagem para ocupar todo o espaço disponível */
+}
+
+/* 
+Propriedade display: Define como um elemento é exibido na página. 
+*/
+header {
+    display: flex; /* Usa Flexbox para layout no cabeçalho */
+    justify-content: space-between; /* Distribui o conteúdo do cabeçalho */
+}
+
+/* 
+Propriedade position: Define a posição de um elemento na página. 
+*/
+.footer {
+    position: fixed; /* Fixa o rodapé na parte inferior da janela */
+    bottom: 0;
+    width: 100%;
+}
+
+/******************************************************
+Exemplos de Pseudo-classes e Pseudo-elementos
+******************************************************/
+
+/* 
+Pseudo-classe :hover: Aplica estilos quando o usuário passa o mouse sobre um elemento. 
+*/
+button:hover {
+    background-color: #555; /* Altera a cor de fundo quando o botão é sobrevoado */
+}
+
+/* 
+Pseudo-elemento ::before: Insere conteúdo antes de um elemento. 
+*/
+h2::before {
+    content: "→ "; /* Adiciona uma seta antes do texto do <h2> */
+    color: red; /* Define a cor da seta como vermelha */
+}
+

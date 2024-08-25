@@ -1,0 +1,122 @@
+/*
+ Conceitos básicos de JavaScript
+************************************************************/
+
+/* 
+   Em JavaScript, não precisamos importar bibliotecas para usar comandos básicos como em C#.
+   O ambiente de execução (como um navegador ou Node.js) já fornece a maioria dos recursos necessários.
+*/
+
+/* Funções são blocos de código que podem ser executados quando chamados */
+function minhaFuncao() {
+    console.log("Hello World!"); // Imprime "Hello World!" no console
+}
+
+/* Chamando a função */
+minhaFuncao(); // Saída: Hello World!
+
+/******************************************************
+Exemplos de declaração de variáveis 
+******************************************************/
+
+/* Como declarar uma variável (antes do ES6) */
+var minhaVariavel;
+
+/* Como declarar uma variável com valor inicial (antes do ES6) */
+var outraVariavel = 0;
+
+/* Em ES6, `let` e `const` foram introduzidos para melhorar o escopo das variáveis */
+
+/* Como declarar uma variável com valor inicial usando `let` */
+let minhaOutraVariavel = 1;
+
+/* Como declarar uma constante com valor inicial */
+const minhaConstante = true;
+
+/******************************************************
+Exemplos de declaração de arrays 
+******************************************************/
+
+/* Como declarar um array de inteiros */
+let arrayDeInteiros = [1, 2, 3];
+
+/* Como declarar um array de strings */
+let arrayDeStrings = ["texto1", "texto2", "texto3"];
+
+/* Como acessar elementos de um array */
+let primeiroElemento = arrayDeInteiros[0]; // Acessa o primeiro elemento do array
+
+/* Como verificar o tamanho de um array */
+let tamanhoArray = arrayDeStrings.length;
+
+/******************************************************
+Exemplos de outros comandos
+******************************************************/
+
+/* Como escrever no console */
+console.log("Hello World!"); // Imprime "Hello World!" no console
+
+/* Como converter um número para string */
+let meuNumero = 123;
+let meuNumeroComoTexto = meuNumero.toString();
+
+/* Como concatenar strings e variáveis */
+let nome = "João";
+let saudacao = "Olá, " + nome + "!"; // Concatenando usando o operador +
+
+/* A partir do ES6, podemos usar templates literais (template literals) */
+let saudacaoComTemplate = `Olá, ${nome}!`; // Concatenando usando template literals
+
+/******************************************************
+Exemplos de estruturas de controle
+******************************************************/
+
+/* Como usar a estrutura condicional `if...else` */
+let valor1 = 1;
+let valor2 = 2;
+
+if (valor1 === valor2) { // Teste de igualdade estrita (compara valor e tipo)
+    console.log("Os valores são iguais");
+} else {
+    console.log("Os valores são diferentes");
+}
+
+/* Como usar o operador lógico `&&` (AND) */
+if (valor1 === 1 && valor2 === 2) {
+    console.log("Ambas as condições são verdadeiras");
+}
+
+/* Como usar o operador lógico `||` (OR) */
+if (valor1 === 1 || valor2 === 3) {
+    console.log("Pelo menos uma das condições é verdadeira");
+}
+
+/******************************************************
+Exemplos de laços de repetição 
+******************************************************/
+
+/* Como usar um laço de repetição `for` */
+for (let i = 0; i < 5; i++) {
+    console.log(`Iteração ${i}`); // Imprime as iterações de 0 a 4
+}
+
+/* Como usar um laço de repetição `while` */
+let contador = 0;
+while (contador < 5) {
+    console.log(`Contador: ${contador}`);
+    contador++;
+}
+
+/* Como usar um laço de repetição `for...of` para iterar sobre um array */
+let frutas = ["Maçã", "Banana", "Laranja"];
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+/* Como usar o comando `break` para sair de um laço */
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // Sai do laço quando `i` é 5
+    }
+    console.log(i);
+}

@@ -1,0 +1,133 @@
+/***********************************************************
+Conceitos básicos de HTML5
+************************************************************/
+
+/* 
+Declaração do DOCTYPE: Informa ao navegador que o documento é do tipo HTML5 
+*/
+<!DOCTYPE html>
+
+
+/* 
+Elemento <html>: Define a raiz de um documento HTML 
+*/
+<html>
+
+
+/* 
+Elemento <head>: Contém metadados sobre o documento, como o título, links para arquivos CSS, etc. 
+*/
+<head>
+    /* 
+    Elemento <title>: Define o título do documento, que aparece na aba do navegador 
+    */
+    <title>Meu Primeiro Documento HTML5</title>
+
+    /* 
+    Elemento <meta charset="UTF-8">: Define a codificação de caracteres do documento como UTF-8 
+    */
+    <meta charset="UTF-8">
+
+    /* 
+    Elemento <meta name="viewport" content="width=device-width, initial-scale=1.0">: Faz o layout ser responsivo, ajustando-se ao tamanho da tela 
+    */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    /* 
+    Elemento <link>: Linka um arquivo externo de CSS ao documento 
+    */
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+/* 
+Elemento <body>: Contém todo o conteúdo visível para o usuário 
+*/
+<body>
+
+    /******************************************************
+    Exemplos de elementos de texto e formatação
+    ******************************************************/
+
+    /* 
+    Elemento <h1> até <h6>: Define títulos e subtítulos, com <h1> sendo o maior e <h6> o menor 
+    */
+    <h1>Este é o título principal</h1>
+    <h2>Este é um subtítulo</h2>
+
+    /* 
+    Elemento <p>: Define um parágrafo de texto 
+    */
+    <p>Este é um parágrafo de exemplo.</p>
+
+    /* 
+    Elemento <strong>: Destaca o texto, geralmente em negrito 
+    */
+    <p><strong>Texto em negrito</strong></p>
+
+    /* 
+    Elemento <em>: Destaca o texto, geralmente em itálico 
+    */
+    <p><em>Texto em itálico</em></p>
+
+    /******************************************************
+    Exemplos de elementos de mídia e links
+    ******************************************************/
+
+    /* 
+    Elemento <a>: Define um hiperlink, o atributo "href" especifica o destino do link 
+    */
+    <a href="https://www.example.com">Visite Example.com</a>
+
+    /* 
+    Elemento <img>: Insere uma imagem no documento, o atributo "src" especifica a URL da imagem, e "alt" fornece um texto alternativo 
+    */
+    <img src="imagem.jpg" alt="Descrição da imagem">
+
+    /* 
+    Elemento <video>: Insere um vídeo no documento, pode ter controles de reprodução 
+    */
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução deste vídeo.
+    </video>
+
+    /******************************************************
+    Exemplos de elementos de estrutura de layout
+    ******************************************************/
+
+    /* 
+    Elemento <header>: Define um cabeçalho para o documento ou uma seção
+    */
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+    </header>
+
+    /* 
+    Elemento <nav>: Define uma seção de navegação com links para outras partes do site 
+    */
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    /* 
+    Elemento <section>: Define uma seção de conteúdo, como capítulos, introduções, etc. 
+    */
+    <section>
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre nossa empresa.</p>
+    </section>
+
+    /* 
+    Elemento <footer>: Define um rodapé para o documento ou seção 
+    */
+    <footer>
+        <p>Todos os direitos reservados © 2024</p>
+    </footer>
+
+</body>
+</html>

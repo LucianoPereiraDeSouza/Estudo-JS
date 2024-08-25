@@ -1,0 +1,31 @@
+header {
+    background-color: aqua;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:black;
+}
+div{
+    background-color: red;
+    text-align: center;
+    border-radius: 8rem;
+}
+section{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+input {
+    text-align: center;
+    padding: 10px 5px 5px;
+	width: 80%;
+	margin: 0 auto;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+
+}
